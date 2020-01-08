@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="320.0" prefWidth="320.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.231" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="282.0" minHeight="282.0" prefHeight="282.0" />
+      <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="282.0" prefWidth="310.0">
+         <children>
+            <ListView fx:id="listView" layoutX="14.0" layoutY="6.0" prefHeight="195.0" prefWidth="287.0" />
+            <Button fx:id="insert" layoutX="58.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#insertClick" prefHeight="25.0" prefWidth="55.0" text="Insert" />
+            <Button fx:id="update" layoutX="130.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#updateClick" text="Update" />
+            <Button fx:id="delete" layoutX="206.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#deleteClick" text="Delete" />
+            <TextField fx:id="textarea" layoutX="18.0" layoutY="222.0" prefHeight="25.0" prefWidth="280.0" />
+         </children></Pane>
+   </children>
+</GridPane>
